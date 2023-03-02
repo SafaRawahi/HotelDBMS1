@@ -1,0 +1,10 @@
+/**
+ * 
+ */
+/**
+ * @author user017
+ *
+ */
+module HotelDb {
+	requires java.sql;
+}

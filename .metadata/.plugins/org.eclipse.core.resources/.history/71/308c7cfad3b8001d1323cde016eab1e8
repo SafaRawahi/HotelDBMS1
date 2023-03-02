@@ -1,0 +1,77 @@
+package hotelDb;
+
+import java.util.Scanner;
+
+public class MainClass {
+	static void mainMenue1() {
+
+		System.out.println("\t \t ****************************** \t \t");
+		System.out.println("\t \t ********** Welcome *********** \t \t");
+		System.out.println("\t \t ****************************** \t \t");
+		System.out.println("\t \t ***Please Choose One Option*** \t \t");
+		System.out.println("\t \t ****************************** \t \t");
+		System.out.println("\t\t 1. Create Hotel Table  ");
+		System.out.println("\t\t 2. Create Room Type Table  ");
+		System.out.println("\t\t 3. Create Rooms Table  ");
+		System.out.println("\t\t 4. Create Guests Table  ");
+		System.out.println("\t\t 5. Create Employee Type Table  ");
+		System.out.println("\t\t 6. Create Employees Table  ");
+		
+}
+	
+	
+	
+	public static void main(String a[]) {
+		Hotel hotelTable = new Hotel();
+		Roomtypetable myRoomtypetable = new Roomtypetable();
+		Room roomTable = new Room();
+		Guest guestTable = new Guest();
+		EmployeeType myEmployeeType = new EmployeeType();
+		Employee employeeTable = new Employee(); 
+		
+		boolean isExit = true;
+
+		while (isExit) {
+
+			Scanner sc = new Scanner(System.in);
+			mainMenue1();
+
+			int option = sc.nextInt();
+
+			switch (option) {
+
+			case 1:
+				hotelTable.hotelTable();
+
+				break;
+			case 2:
+				myRoomtypetable.roomTableType();
+
+				break;
+			case 3:
+				roomTable.roomTable();
+
+				break;
+			case 4:
+				guestTable.GuestsTable();
+
+				break;
+		
+			case 5:
+				guestTable.GuestsTable();
+
+				break;
+			case 6:
+				guestTable.GuestsTable();
+
+				break;
+		
+		
+		
+	}
+	
+}
+		isExit = false;
+
+	}
+}
