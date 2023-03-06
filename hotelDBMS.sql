@@ -1,5 +1,12 @@
-CREATE DATABASE HotelDBMSS;
+CREATE DATABASE HotelDBMS1;
 SHOW DATABASES;
 
  USE HotelDBMS1;
- SHOW TABLE hotel;
+ SELECT * FROM hotel;
+ SELECT * FROM RoomType;
+ SELECT * FROM Room;
+ SELECT * FROM Guest;
+ SELECT * FROM EmployeeTableType;
+ SELECT * FROM Employees;
+ 
+ 

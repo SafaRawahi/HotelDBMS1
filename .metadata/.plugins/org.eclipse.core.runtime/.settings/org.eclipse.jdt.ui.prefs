@@ -1,4 +1,4 @@
-content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"/>
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="hotelDb.Room"><rhs name\="hotelDb.Room"/></lhs><lhs name\="hotelDb.Guest"><rhs name\="hotelDb.Guest"/></lhs><lhs name\="hotelDb.EmployeeType"><rhs name\="hotelDb.EmployeeType"/></lhs><lhs name\="hotelDb.Employee"><rhs name\="hotelDb.Employee"/></lhs></history>
 content_assist_number_of_computers=12
 content_assist_proposals_background=255,255,255
 content_assist_proposals_foreground=0,0,0

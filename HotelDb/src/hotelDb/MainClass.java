@@ -10,12 +10,20 @@ public class MainClass {
 		System.out.println("\t \t ****************************** \t \t");
 		System.out.println("\t \t ***Please Choose One Option*** \t \t");
 		System.out.println("\t \t ****************************** \t \t");
-		System.out.println("\t\t 1. Create Hotel Table  ");
-		System.out.println("\t\t 2. Create Room Type Table  ");
-		System.out.println("\t\t 3. Create Rooms Table  ");
-		System.out.println("\t\t 4. Create Guests Table  ");
-		System.out.println("\t\t 5. Create Employee Type Table  ");
-		System.out.println("\t\t 6. Create Employees Table  ");
+//		System.out.println("\t\t 1. Create Hotel Table  ");
+//		System.out.println("\t\t 2. Create Room Type Table  ");
+//		System.out.println("\t\t 3. Create Rooms Table  ");
+//		System.out.println("\t\t 4. Create Guests Table  ");
+//		System.out.println("\t\t 5. Create Employee Type Table  ");
+//		System.out.println("\t\t 6. Create Employees Table  ");
+//		
+		System.out.println("\t\t 1. Insert values Hotels  ");
+		System.out.println("\t\t 2. Read from Hotels Table  ");
+		System.out.println("\t\t 3. Read from Hotels Table By Id ");
+		System.out.println("\t\t 4. Update from Hotels Table By Id ");
+		System.out.println("\t\t 5. Delete from Hotels Table By Id ");
+		System.out.println("\t\t 6. Update value is active in one column ");
+		
 		
 		System.out.println("\t\t 7. Insert 10,000 hotels ");
 		System.out.println("\t\t 8. Insert 1 hotel");
@@ -43,6 +51,7 @@ public class MainClass {
 
 			Scanner sc = new Scanner(System.in);
 			mainMenue1();
+			
 			int num;
 
 			int option = sc.nextInt();
@@ -50,29 +59,46 @@ public class MainClass {
 			switch (option) {
 
 			case 1:
-				hotelTable.hotelTable();
+//				hotel table
+//				hotelTable.hotelTable();
+				
+				hotelTable.insertIntoTable();
+
 
 				break;
 			case 2:
-				myRoomtypetable.roomTableType();
+//				room type table
+//				myRoomtypetable.roomTableType();
+				
+				hotelTable.readFromTable();
 
 				break;
 			case 3:
-				roomTable.roomTable();
+//				room table
+//				roomTable.roomTable();
+				
+				hotelTable.getById();
 
 				break;
 			case 4:
-				guestTable.GuestsTable();
+//				guest table
+//				guestTable.GuestsTable();
 
+				hotelTable.updateById();
 				break;
 		
 			case 5:
-				myEmployeeType.EmployeeTableType();
+//				employee type table
+//				myEmployeeType.EmployeeTableType();
 
+				hotelTable.deleteById();
 				break;
 			case 6:
-				employeeTable.employeeTable();
+//				employee table
+//				employeeTable.employeeTable();
 
+				hotelTable.makeIsActiveFalseById();
+				
 				break;
 			case 7:
 				myEmployeeType.EmployeeTableType();
@@ -82,17 +108,24 @@ public class MainClass {
 				break;
 				
 			case 8:
-				employeeTable.employeeTable();
+				hotelTable.insertMoreHotels(1);
 
 				break;
 			case 9:
-				myEmployeeType.EmployeeTableType();
+				hotelTable.printTenHotels(10);
 
 				break;
 			case 10:
-				employeeTable.employeeTable();
-
+				hotelTable.makeIsActiveFalseById();
+				
 				break;
+			case 11:
+				System.out.println(" Enter The Numbers Of Hotal You Want To Print ");
+				int n = sc.nextInt();
+				hotelTable.printTenHotels(n);
+				break;
+				
+				
 				
 			case 12:
 				System.out.println(" See You Soon ");
